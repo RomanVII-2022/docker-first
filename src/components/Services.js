@@ -1,5 +1,5 @@
 import React from 'react'
-import service from '../images/service.jpg'
+import { motion } from "framer-motion"
 
 const Services = () => {
   return (
@@ -13,8 +13,9 @@ const Services = () => {
                     </div>
                 </div>
                 <div className="row align-items-stretch">
+                    
                     <div className="col-lg-4 order-lg-1">
-                        <div className="h-100"><div className="frame h-100"><div className="feature-img-bg h-100" style={{}}></div></div></div>
+                        <div className="h-100"><div className="frame h-100"><motion.div animate={{ y:[0, -100, -100, 0, 0, 100, 100, 0] }} transition={{ repeat: Infinity, duration: 10 }} className="feature-img-bg h-100"></motion.div></div></div>
                     </div>
 
                     <div className="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1" >
